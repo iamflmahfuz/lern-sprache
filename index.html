@@ -1,785 +1,367 @@
-```html
 <!DOCTYPE html>
-<html lang="de">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="LernSprache – Deutsch lernen auf Bangla. A1, A2, B1 und B2 Deutschkurse, Grammatik, Wortschatz und Prüfungsvorbereitung.">
+    <meta
+        name="description"
+        content="Lern Sprache – Learn German easily with Bangla and English support."
+    >
 
-    <title>LernSprache – Deutsch einfach lernen</title>
+    <title>Lern Sprache | Learn German Easily</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
 
-    <!-- =========================================
-         TOP ANNOUNCEMENT BAR
-    ========================================== -->
-
-    <div class="announcement-bar">
-        🎓 Neue Deutschkurse – A1 bis B2
-        <a href="#courses">Jetzt entdecken →</a>
-    </div>
-
-
-    <!-- =========================================
-         NAVIGATION
-    ========================================== -->
+    <!-- ================= HEADER ================= -->
 
     <header class="header">
 
-        <nav class="navbar container">
+        <div class="container nav-container">
 
-            <!-- Logo -->
-            <a href="#" class="logo">
-                <span class="logo-icon">L</span>
-                <span class="logo-text">
-                    Lern<span>Sprache</span>
-                </span>
+            <a href="index.html" class="logo">
+                Lern <span>Sprache</span>
             </a>
 
-
-            <!-- Navigation Links -->
-            <div class="nav-links">
+            <nav class="navbar">
 
                 <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#courses">Courses</a>
+                <a href="#learning">Learn</a>
+                <a href="#contact">Contact</a>
 
-                <a href="#about">Über uns</a>
+            </nav>
 
-                <a href="#courses">Kurse</a>
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
 
-                <a href="#vocabulary">Wortschatz</a>
-
-                <a href="#faq">FAQ</a>
-
-            </div>
-
-
-            <!-- Navigation Button -->
-            <a href="#contact" class="nav-button">
-                Kostenlos starten
-            </a>
-
-        </nav>
+        </div>
 
     </header>
 
 
+    <!-- ================= HERO ================= -->
 
-    <!-- =========================================
-         HERO SECTION
-    ========================================== -->
+    <section class="hero" id="home">
 
-    <main>
+        <div class="container hero-container">
 
-        <section id="home" class="hero">
+            <div class="hero-content">
 
-            <div class="container hero-grid">
+                <span class="hero-label">
+                    🇩🇪 Deutsch lernen leicht gemacht
+                </span>
 
+                <h1>
+                    Learn German
+                    <span>the Easy Way</span>
+                </h1>
 
-                <!-- Hero Text -->
+                <p class="hero-bangla">
+                    সহজ মাতৃভাষায় শিখুন জার্মান ভাষা
+                </p>
 
-                <div class="hero-content">
+                <p class="hero-description">
+                    Learn German from A1 to B2 with structured lessons,
+                    vocabulary, grammar, speaking, listening, reading and writing practice.
+                </p>
 
-                    <div class="badge">
-                        🇩🇪 Deutsch lernen · 🇧🇩 Bangla erklärt
-                    </div>
+                <div class="hero-buttons">
 
+                    <a href="#courses" class="btn btn-primary">
+                        Explore Courses
+                    </a>
 
-                    <h1>
-                        Deutsch lernen
-                        <span>einfacher</span>
-                        gemacht.
-                    </h1>
-
-
-                    <p class="hero-description">
-                        Lerne Deutsch von A1 bis B2 mit verständlichen
-                        Erklärungen auf Bangla, praktischen Übungen und
-                        echten Alltagssituationen.
-                    </p>
-
-
-                    <!-- Buttons -->
-
-                    <div class="hero-buttons">
-
-                        <a href="#courses" class="btn btn-primary">
-                            Kurse entdecken →
-                        </a>
-
-                        <a href="#vocabulary" class="btn btn-secondary">
-                            Wortschatz lernen
-                        </a>
-
-                    </div>
-
-
-                    <!-- Small Features -->
-
-                    <div class="hero-features">
-
-                        <div>
-                            <strong>✓</strong>
-                            A1 – B2
-                        </div>
-
-                        <div>
-                            <strong>✓</strong>
-                            Bangla erklärt
-                        </div>
-
-                        <div>
-                            <strong>✓</strong>
-                            Praxisnah
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Hero Illustration -->
-
-                <div class="hero-visual">
-
-                    <div class="hero-card main-card">
-
-                        <div class="german-flag">
-                            🇩🇪
-                        </div>
-
-                        <h3>
-                            Deutsch lernen
-                        </h3>
-
-                        <p>
-                            Schritt für Schritt
-                        </p>
-
-                        <div class="learning-progress">
-
-                            <div class="progress-label">
-                                <span>A1</span>
-                                <span>100%</span>
-                            </div>
-
-                            <div class="progress-bar">
-                                <div></div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="floating-card card-one">
-                        🗣️ Sprechen
-                    </div>
-
-                    <div class="floating-card card-two">
-                        📚 Grammatik
-                    </div>
-
-                    <div class="floating-card card-three">
-                        🎧 Hören
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             TODAY'S WORD
-        ========================================== -->
-
-        <section class="word-section">
-
-            <div class="container">
-
-                <div class="word-card">
-
-                    <div class="word-icon">
-                        💡
-                    </div>
-
-                    <div>
-
-                        <span class="section-label">
-                            HEUTE LERNEN
-                        </span>
-
-                        <h2>
-                            der Alltag
-                        </h2>
-
-                        <p>
-                            দৈনন্দিন জীবন · everyday life
-                        </p>
-
-                    </div>
-
-                    <div class="word-example">
-
-                        <strong>Beispiel:</strong>
-
-                        <span>
-                            Im Alltag spreche ich oft Deutsch.
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             ABOUT
-        ========================================== -->
-
-        <section id="about" class="section about">
-
-            <div class="container about-grid">
-
-                <div class="about-content">
-
-                    <span class="section-label">
-                        ÜBER LERNSPRACHE
-                    </span>
-
-                    <h2>
-                        Deutsch verstehen,
-                        <span>nicht nur auswendig lernen.</span>
-                    </h2>
-
-                    <p>
-                        Deutsch kann schwierig sein – besonders wenn
-                        Grammatikregeln nur auf Deutsch erklärt werden.
-                    </p>
-
-                    <p>
-                        LernSprache verbindet Deutsch mit verständlichen
-                        Bangla-Erklärungen, damit du die Sprache wirklich
-                        verstehst und im Alltag anwenden kannst.
-                    </p>
-
-                    <a href="#courses" class="text-link">
-                        Unsere Kurse ansehen →
+                    <a href="#about" class="btn btn-secondary">
+                        Learn More
                     </a>
 
                 </div>
 
-
-                <div class="about-stats">
-
-                    <div class="stat-card">
-
-                        <strong>4</strong>
-
-                        <span>
-                            Sprachstufen
-                        </span>
-
-                    </div>
+            </div>
 
 
-                    <div class="stat-card">
+            <div class="hero-card">
 
-                        <strong>A1–B2</strong>
+                <div class="german-flag">
+                    🇩🇪
+                </div>
 
-                        <span>
-                            Deutschkurse
-                        </span>
+                <h3>
+                    Deutsch lernen
+                </h3>
 
-                    </div>
+                <p>
+                    Lernen → Üben → Sprechen → Fortschritt
+                </p>
 
+                <div class="hero-levels">
 
-                    <div class="stat-card">
-
-                        <strong>🇧🇩</strong>
-
-                        <span>
-                            Bangla Support
-                        </span>
-
-                    </div>
-
-
-                    <div class="stat-card">
-
-                        <strong>100%</strong>
-
-                        <span>
-                            Praxisorientiert
-                        </span>
-
-                    </div>
+                    <span>A1</span>
+                    <span>A2</span>
+                    <span>B1</span>
+                    <span>B2</span>
 
                 </div>
 
             </div>
 
-        </section>
+        </div>
 
+    </section>
 
 
-        <!-- =========================================
-             COURSES
-        ========================================== -->
+    <!-- ================= ABOUT ================= -->
 
-        <section id="courses" class="section courses">
+    <section class="section" id="about">
 
-            <div class="container">
+        <div class="container">
 
-                <div class="section-heading">
+            <div class="section-heading">
 
-                    <span class="section-label">
-                        DEUTSCHKURSE
-                    </span>
+                <span class="section-label">
+                    About Lern Sprache
+                </span>
 
-                    <h2>
-                        Wähle dein
-                        <span>Sprachniveau</span>
-                    </h2>
+                <h2>
+                    German lernen – Schritt für Schritt
+                </h2>
 
-                    <p>
-                        Starte auf deinem aktuellen Niveau und
-                        entwickle deine Deutschkenntnisse Schritt für Schritt.
-                    </p>
-
-                </div>
-
-
-                <div class="course-grid">
-
-
-                    <!-- A1 -->
-
-                    <article class="course-card">
-
-                        <div class="level-badge">
-                            A1
-                        </div>
-
-                        <h3>
-                            Deutsch A1
-                        </h3>
-
-                        <p>
-                            Die Grundlagen der deutschen Sprache.
-                        </p>
-
-                        <ul>
-
-                            <li>✓ Alphabet & Aussprache</li>
-
-                            <li>✓ Grundgrammatik</li>
-
-                            <li>✓ Alltagssprache</li>
-
-                            <li>✓ Grundwortschatz</li>
-
-                        </ul>
-
-                        <a href="#" class="course-button">
-                            A1 entdecken →
-                        </a>
-
-                    </article>
-
-
-
-                    <!-- A2 -->
-
-                    <article class="course-card featured">
-
-                        <div class="level-badge">
-                            A2
-                        </div>
-
-                        <h3>
-                            Deutsch A2
-                        </h3>
-
-                        <p>
-                            Baue deine Grundlagen weiter aus.
-                        </p>
-
-                        <ul>
-
-                            <li>✓ Erweiterte Grammatik</li>
-
-                            <li>✓ Alltag & Beruf</li>
-
-                            <li>✓ Kommunikation</li>
-
-                            <li>✓ Mehr Wortschatz</li>
-
-                        </ul>
-
-                        <a href="#" class="course-button">
-                            A2 entdecken →
-                        </a>
-
-                    </article>
-
-
-
-                    <!-- B1 -->
-
-                    <article class="course-card">
-
-                        <div class="level-badge">
-                            B1
-                        </div>
-
-                        <h3>
-                            Deutsch B1
-                        </h3>
-
-                        <p>
-                            Selbstständig auf Deutsch kommunizieren.
-                        </p>
-
-                        <ul>
-
-                            <li>✓ B1 Grammatik</li>
-
-                            <li>✓ Diskussionen</li>
-
-                            <li>✓ Schreiben</li>
-
-                            <li>✓ Sprechen</li>
-
-                        </ul>
-
-                        <a href="#" class="course-button">
-                            B1 entdecken →
-                        </a>
-
-                    </article>
-
-
-
-                    <!-- B2 -->
-
-                    <article class="course-card">
-
-                        <div class="level-badge">
-                            B2
-                        </div>
-
-                        <h3>
-                            Deutsch B2
-                        </h3>
-
-                        <p>
-                            Sicher und selbstbewusst Deutsch sprechen.
-                        </p>
-
-                        <ul>
-
-                            <li>✓ Komplexe Grammatik</li>
-
-                            <li>✓ Argumentation</li>
-
-                            <li>✓ Prüfungsvorbereitung</li>
-
-                            <li>✓ B2 Sprechen</li>
-
-                        </ul>
-
-                        <a href="#" class="course-button">
-                            B2 entdecken →
-                        </a>
-
-                    </article>
-
-                </div>
+                <p>
+                    Lern Sprache is designed to make German learning easier
+                    for Bangla-speaking learners.
+                </p>
 
             </div>
 
-        </section>
 
+            <div class="features">
 
+                <div class="feature-card">
 
-        <!-- =========================================
-             VOCABULARY
-        ========================================== -->
-
-        <section id="vocabulary" class="section vocabulary">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span class="section-label">
-                        WORTSCHATZ
-                    </span>
-
-                    <h2>
-                        Lerne neue Wörter
-                        <span>jeden Tag.</span>
-                    </h2>
-
-                    <p>
-                        Deutsch + Artikel + Plural + Bangla Bedeutung
-                        + Beispiel.
-                    </p>
-
-                </div>
-
-
-                <div class="vocabulary-card">
-
-                    <div class="vocab-top">
-
-                        <span class="vocab-level">
-                            A1
-                        </span>
-
-                        <span>
-                            Alltag
-                        </span>
-
+                    <div class="feature-icon">
+                        📚
                     </div>
-
 
                     <h3>
-                        die Wohnung
+                        Structured Learning
                     </h3>
 
-
-                    <p class="plural">
-                        Plural: die Wohnungen
+                    <p>
+                        Learn German systematically from A1 to B2.
                     </p>
 
+                </div>
 
-                    <p class="meaning">
-                        🟢 বাসা / ফ্ল্যাট
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🇩🇪
+                    </div>
+
+                    <h3>
+                        Real German
+                    </h3>
+
+                    <p>
+                        Learn useful German vocabulary and expressions
+                        for everyday communication.
                     </p>
 
+                </div>
 
-                    <div class="example-box">
 
-                        <strong>
-                            Beispiel:
-                        </strong>
+                <div class="feature-card">
 
-                        <p>
-                            Meine Wohnung ist sehr schön.
-                        </p>
-
-                        <small>
-                            আমার বাসাটি খুব সুন্দর।
-                        </small>
-
+                    <div class="feature-icon">
+                        🇧🇩
                     </div>
 
+                    <h3>
+                        Bangla Support
+                    </h3>
 
-                    <button class="audio-button">
-                        🔊 Aussprache hören
-                    </button>
+                    <p>
+                        Difficult German concepts are explained
+                        in an easy-to-understand way.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🎯
+                    </div>
+
+                    <h3>
+                        Exam Preparation
+                    </h3>
+
+                    <p>
+                        Build the skills needed for German language exams
+                        and real-life communication.
+                    </p>
 
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
+    <!-- ================= COURSES ================= -->
 
-        <!-- =========================================
-             CTA
-        ========================================== -->
+    <section class="section courses-section" id="courses">
 
-        <section id="contact" class="cta-section">
+        <div class="container">
 
-            <div class="container">
+            <div class="section-heading">
 
-                <div class="cta-card">
+                <span class="section-label">
+                    Unsere Kurse
+                </span>
 
-                    <div>
+                <h2>
+                    Choose Your German Level
+                </h2>
 
-                        <span class="section-label">
-                            BEREIT ZU STARTEN?
-                        </span>
+                <p>
+                    Select a level and start your German learning journey.
+                </p>
 
-                        <h2>
-                            Dein Deutsch.
-                            Dein nächster Schritt.
-                        </h2>
-
-                        <p>
-                            Starte jetzt deine Deutschlernreise
-                            mit LernSprache.
-                        </p>
-
-                    </div>
+            </div>
 
 
-                    <div class="cta-buttons">
+            <!-- JavaScript will generate courses here -->
 
-                        <a href="#" class="btn btn-white">
-                            Kostenlos starten →
-                        </a>
+            <div
+                class="courses-grid"
+                id="coursesContainer"
+            >
 
-                        <a href="#" class="btn btn-outline-white">
-                            WhatsApp kontaktieren
-                        </a>
+                <p class="loading">
+                    Loading courses...
+                </p>
 
-                    </div>
+            </div>
 
+        </div>
+
+    </section>
+
+
+    <!-- ================= LEARNING ================= -->
+
+    <section class="section" id="learning">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Lernbereiche
+                </span>
+
+                <h2>
+                    Everything You Need to Learn German
+                </h2>
+
+            </div>
+
+
+            <div class="learning-grid">
+
+                <div class="learning-card">
+                    <span>🗣️</span>
+                    <h3>Sprechen</h3>
+                    <p>Speaking</p>
+                </div>
+
+                <div class="learning-card">
+                    <span>🎧</span>
+                    <h3>Hören</h3>
+                    <p>Listening</p>
+                </div>
+
+                <div class="learning-card">
+                    <span>📖</span>
+                    <h3>Lesen</h3>
+                    <p>Reading</p>
+                </div>
+
+                <div class="learning-card">
+                    <span>✍️</span>
+                    <h3>Schreiben</h3>
+                    <p>Writing</p>
+                </div>
+
+                <div class="learning-card">
+                    <span>🧠</span>
+                    <h3>Wortschatz</h3>
+                    <p>Vocabulary</p>
+                </div>
+
+                <div class="learning-card">
+                    <span>📐</span>
+                    <h3>Grammatik</h3>
+                    <p>Grammar</p>
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
+    <!-- ================= CTA ================= -->
 
-        <!-- =========================================
-             FAQ
-        ========================================== -->
+    <section class="cta">
 
-        <section id="faq" class="section faq">
+        <div class="container cta-content">
 
-            <div class="container">
+            <h2>
+                Bereit, Deutsch zu lernen?
+            </h2>
 
-                <div class="section-heading">
+            <p>
+                Start your German learning journey with Lern Sprache.
+            </p>
 
-                    <span class="section-label">
-                        FAQ
-                    </span>
+            <a href="#courses" class="btn btn-primary">
+                View Courses
+            </a>
 
-                    <h2>
-                        Häufig gestellte
-                        <span>Fragen</span>
-                    </h2>
+        </div>
 
-                </div>
-
-
-                <div class="faq-list">
+    </section>
 
 
-                    <details>
+    <!-- ================= CONTACT ================= -->
 
-                        <summary>
-                            Für wen ist LernSprache geeignet?
-                            <span>+</span>
-                        </summary>
+    <footer class="footer" id="contact">
 
-                        <p>
-                            LernSprache richtet sich an Deutschlernende
-                            von A1 bis B2, besonders an Lernende, die
-                            verständliche Erklärungen auf Bangla wünschen.
-                        </p>
-
-                    </details>
-
-
-                    <details>
-
-                        <summary>
-                            Welche Niveaus werden angeboten?
-                            <span>+</span>
-                        </summary>
-
-                        <p>
-                            Aktuell konzentriert sich LernSprache auf
-                            A1, A2, B1 und B2.
-                        </p>
-
-                    </details>
-
-
-                    <details>
-
-                        <summary>
-                            Kann ich mit A1 anfangen?
-                            <span>+</span>
-                        </summary>
-
-                        <p>
-                            Ja. Du kannst ohne vorherige Deutschkenntnisse
-                            mit A1 beginnen.
-                        </p>
-
-                    </details>
-
-
-                    <details>
-
-                        <summary>
-                            Gibt es Bangla-Erklärungen?
-                            <span>+</span>
-                        </summary>
-
-                        <p>
-                            Ja. Grammatik, Wortschatz und wichtige
-                            Konzepte können auf Bangla erklärt werden.
-                        </p>
-
-                    </details>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- =========================================
-         FOOTER
-    ========================================== -->
-
-    <footer class="footer">
-
-        <div class="container footer-grid">
-
+        <div class="container footer-container">
 
             <div>
 
-                <a href="#" class="logo footer-logo">
-
-                    <span class="logo-icon">L</span>
-
-                    <span class="logo-text">
-                        Lern<span>Sprache</span>
-                    </span>
-
-                </a>
+                <h2 class="footer-logo">
+                    Lern Sprache
+                </h2>
 
                 <p>
-                    Deutsch lernen – einfach,
-                    verständlich und praxisnah.
+                    German lernen. Zukunft gestalten.
                 </p>
 
             </div>
@@ -787,75 +369,49 @@
 
             <div>
 
-                <h4>
-                    Lernen
-                </h4>
+                <h3>
+                    Quick Links
+                </h3>
 
-                <a href="#courses">A1 Deutsch</a>
-
-                <a href="#courses">A2 Deutsch</a>
-
-                <a href="#courses">B1 Deutsch</a>
-
-                <a href="#courses">B2 Deutsch</a>
+                <a href="#home">Home</a>
+                <a href="#courses">Courses</a>
+                <a href="#learning">Learning</a>
 
             </div>
 
 
             <div>
 
-                <h4>
-                    Links
-                </h4>
+                <h3>
+                    Contact
+                </h3>
 
-                <a href="#about">Über uns</a>
+                <p>
+                    🇧🇩 Bangladesh
+                </p>
 
-                <a href="#vocabulary">Wortschatz</a>
-
-                <a href="#faq">FAQ</a>
-
-                <a href="#contact">Kontakt</a>
-
-            </div>
-
-
-            <div>
-
-                <h4>
-                    Kontakt
-                </h4>
-
-                <a href="#">
-                    WhatsApp
-                </a>
-
-                <a href="#">
-                    Facebook
-                </a>
-
-                <a href="#">
-                    Instagram
-                </a>
+                <p>
+                    German Language Learning
+                </p>
 
             </div>
 
         </div>
 
 
-        <div class="footer-bottom">
+        <div class="copyright">
 
-            <div class="container">
-
-                © 2026 LernSprache. Alle Rechte vorbehalten.
-
-            </div>
+            <p>
+                © 2026 Lern Sprache. All rights reserved.
+            </p>
 
         </div>
 
     </footer>
 
 
-</body>
+    <script src="js/courses.js"></script>
+    <script src="js/main.js"></script>
 
+</body>
 </html>
-```
