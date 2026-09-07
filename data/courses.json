@@ -1,0 +1,128 @@
+{
+    "courses": [
+
+        {
+            "level": "A1",
+            "title": "Deutsch A1",
+            "banglaTitle": "জার্মান A1",
+            "price": "৳4,500",
+            "duration": "3 Months",
+            "status": "available",
+
+            "description":
+                "Build a strong foundation in German and learn to communicate in simple everyday situations.",
+
+            "speaking":
+                "Introduce yourself, talk about family, hobbies, daily routine, shopping and basic needs.",
+
+            "writing":
+                "Write simple messages, forms, emails and short personal texts.",
+
+            "listening":
+                "Understand simple conversations, announcements and everyday expressions.",
+
+            "reading":
+                "Understand simple texts, signs, forms, menus and short messages.",
+
+            "grammar":
+                "Personal pronouns, verbs, articles, Akkusativ, basic Dativ, sentence structure, modal verbs, Perfekt basics and more.",
+
+            "vocabulary":
+                "Everyday vocabulary related to family, work, food, shopping, time, home, travel and daily life."
+        },
+
+
+        {
+            "level": "A2",
+            "title": "Deutsch A2",
+            "banglaTitle": "জার্মান A2",
+            "price": "৳6,500",
+            "duration": "3 Months",
+            "status": "available",
+
+            "description":
+                "Improve your German and communicate more confidently in everyday situations.",
+
+            "speaking":
+                "Talk about experiences, plans, health, work, travel, relationships and everyday problems.",
+
+            "writing":
+                "Write emails, messages, descriptions, invitations and simple formal texts.",
+
+            "listening":
+                "Understand conversations and important information in familiar everyday situations.",
+
+            "reading":
+                "Understand short articles, advertisements, emails, messages and everyday documents.",
+
+            "grammar":
+                "Dativ, Wechselpräpositionen, Perfekt, Präteritum, subordinate clauses, reflexive verbs, comparative forms and more.",
+
+            "vocabulary":
+                "Expand vocabulary for work, education, health, travel, housing, relationships, shopping and everyday communication."
+        },
+
+
+        {
+            "level": "B1",
+            "title": "Deutsch B1",
+            "banglaTitle": "জার্মান B1",
+            "price": "৳9,000",
+            "duration": "3 Months",
+            "status": "available",
+
+            "description":
+                "Develop independent German communication skills for work, study and everyday life.",
+
+            "speaking":
+                "Express opinions, discuss familiar topics, describe experiences and give reasons for your opinions.",
+
+            "writing":
+                "Write structured emails, opinions, complaints, applications and personal texts.",
+
+            "listening":
+                "Understand the main points of clear standard German on familiar topics.",
+
+            "reading":
+                "Understand longer everyday texts, articles, emails and informative materials.",
+
+            "grammar":
+                "Relative clauses, Konjunktiv II, passive voice, adjective declension, connectors, subordinate clauses and advanced sentence structures.",
+
+            "vocabulary":
+                "Build vocabulary for work, education, society, environment, technology, media and everyday communication."
+        },
+
+
+        {
+            "level": "B2",
+            "title": "Deutsch B2",
+            "banglaTitle": "জার্মান B2",
+            "price": "Coming Soon",
+            "duration": "Coming Soon",
+            "status": "coming-soon",
+
+            "description":
+                "Advanced German for confident communication, academic purposes and professional situations.",
+
+            "speaking":
+                "Discuss complex topics, express nuanced opinions and participate confidently in discussions.",
+
+            "writing":
+                "Write structured arguments, formal texts and detailed opinions.",
+
+            "listening":
+                "Understand longer spoken texts and discussions on a wide range of topics.",
+
+            "reading":
+                "Understand complex texts, articles and argumentative materials.",
+
+            "grammar":
+                "Advanced B2 grammar and complex sentence structures.",
+
+            "vocabulary":
+                "Advanced vocabulary for academic, professional and social communication."
+        }
+
+    ]
+}
