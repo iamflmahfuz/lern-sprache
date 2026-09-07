@@ -919,3 +919,145 @@ a {
     }
 
 }
+/* =========================
+   VOCABULARY PAGE
+========================= */
+
+.vocabulary-controls {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 15px;
+    max-width: 900px;
+    margin: 40px auto 0;
+}
+
+
+.vocabulary-controls input,
+.vocabulary-controls select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #ffffff;
+}
+
+
+.vocabulary-controls input:focus,
+.vocabulary-controls select:focus {
+    outline: none;
+    border-color: #d71920;
+}
+
+
+.vocabulary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.vocab-card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+
+.vocab-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.vocab-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.vocab-level {
+    background: #111827;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.vocab-type {
+    color: #d71920;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.vocab-word {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+.vocab-grammar {
+    color: #777777;
+    font-size: 13px;
+}
+
+
+.vocab-meaning {
+    margin-top: 20px;
+}
+
+
+.vocab-meaning p {
+    margin-bottom: 7px;
+}
+
+
+.vocab-example {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+
+.vocab-example p {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+
+@media (max-width: 900px) {
+
+    .vocabulary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .vocabulary-controls {
+        grid-template-columns: 1fr;
+    }
+
+
+    .vocabulary-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
