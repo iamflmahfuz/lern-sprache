@@ -1,0 +1,365 @@
+{
+    "vocabulary": [
+
+        {
+            "id": 1,
+            "level": "A1",
+            "word": "Hallo",
+            "type": "Expression",
+            "article": "",
+            "plural": "",
+            "english": "Hello",
+            "bangla": "হ্যালো / নমস্কার",
+            "example": "Hallo! Wie geht es dir?"
+        },
+
+        {
+            "id": 2,
+            "level": "A1",
+            "word": "der Name",
+            "type": "Nomen",
+            "article": "der",
+            "plural": "die Namen",
+            "english": "name",
+            "bangla": "নাম",
+            "example": "Mein Name ist Ali."
+        },
+
+        {
+            "id": 3,
+            "level": "A1",
+            "word": "die Familie",
+            "type": "Nomen",
+            "article": "die",
+            "plural": "die Familien",
+            "english": "family",
+            "bangla": "পরিবার",
+            "example": "Meine Familie ist groß."
+        },
+
+        {
+            "id": 4,
+            "level": "A1",
+            "word": "das Haus",
+            "type": "Nomen",
+            "article": "das",
+            "plural": "die Häuser",
+            "english": "house",
+            "bangla": "বাড়ি",
+            "example": "Das Haus ist schön."
+        },
+
+        {
+            "id": 5,
+            "level": "A1",
+            "word": "die Wohnung",
+            "type": "Nomen",
+            "article": "die",
+            "plural": "die Wohnungen",
+            "english": "apartment",
+            "bangla": "ফ্ল্যাট / অ্যাপার্টমেন্ট",
+            "example": "Ich wohne in einer Wohnung."
+        },
+
+        {
+            "id": 6,
+            "level": "A1",
+            "word": "das Buch",
+            "type": "Nomen",
+            "article": "das",
+            "plural": "die Bücher",
+            "english": "book",
+            "bangla": "বই",
+            "example": "Das Buch ist interessant."
+        },
+
+        {
+            "id": 7,
+            "level": "A1",
+            "word": "der Tisch",
+            "type": "Nomen",
+            "article": "der",
+            "plural": "die Tische",
+            "english": "table",
+            "bangla": "টেবিল",
+            "example": "Das Buch liegt auf dem Tisch."
+        },
+
+        {
+            "id": 8,
+            "level": "A1",
+            "word": "die Schule",
+            "type": "Nomen",
+            "article": "die",
+            "plural": "die Schulen",
+            "english": "school",
+            "bangla": "স্কুল",
+            "example": "Die Kinder gehen in die Schule."
+        },
+
+        {
+            "id": 9,
+            "level": "A1",
+            "word": "der Lehrer",
+            "type": "Nomen",
+            "article": "der",
+            "plural": "die Lehrer",
+            "english": "teacher",
+            "bangla": "শিক্ষক",
+            "example": "Der Lehrer erklärt die Grammatik."
+        },
+
+        {
+            "id": 10,
+            "level": "A1",
+            "word": "die Arbeit",
+            "type": "Nomen",
+            "article": "die",
+            "plural": "die Arbeiten",
+            "english": "work",
+            "bangla": "কাজ",
+            "example": "Ich habe heute viel Arbeit."
+        },
+
+        {
+            "id": 11,
+            "level": "A1",
+            "word": "gehen",
+            "type": "Verb",
+            "article": "",
+            "plural": "",
+            "english": "to go",
+            "bangla": "যাওয়া",
+            "example": "Ich gehe heute zur Schule."
+        },
+
+        {
+            "id": 12,
+            "level": "A1",
+            "word": "kommen",
+            "type": "Verb",
+            "article": "",
+            "plural": "",
+            "english": "to come",
+            "bangla": "আসা",
+            "example": "Ich komme aus Bangladesch."
+        },
+
+        {
+            "id": 13,
+            "level": "A1",
+            "word": "machen",
+            "type": "Verb",
+            "article": "",
+            "plural": "",
+            "english": "to do / make",
+            "bangla": "করা / বানানো",
+            "example": "Was machst du heute?"
+        },
+
+        {
+            "id": 14,
+            "level": "A1",
+            "word": "lernen",
+            "type": "Verb",
+            "article": "",
+            "plural": "",
+            "english": "to learn",
+            "bangla": "শেখা",
+            "example": "Ich lerne Deutsch."
+        },
+
+        {
+            "id": 15,
+            "level": "A1",
+            "word": "sprechen",
+            "type": "Verb",
+            "article": "",
+            "plural": "",
+            "english": "to speak",
+            "bangla": "কথা বলা",
+            "example": "Ich spreche Deutsch."
+        },
+
+        {
+            "id": 16,
+            "level": "A1",
+            "word": "lesen",
+            "type": "Verb",
+            "article": "",
+            "plural": "",
+            "english": "to read",
+            "bangla": "পড়া",
+            "example": "Ich lese ein Buch."
+        },
+
+        {
+            "id": 17,
+            "level": "A1",
+            "word": "schreiben",
+            "type": "Verb",
+            "article": "",
+            "plural": "",
+            "english": "to write",
+            "bangla": "লেখা",
+            "example": "Ich schreibe eine E-Mail."
+        },
+
+        {
+            "id": 18,
+            "level": "A1",
+            "word": "essen",
+            "type": "Verb",
+            "article": "",
+            "plural": "",
+            "english": "to eat",
+            "bangla": "খাওয়া",
+            "example": "Ich esse gern Reis."
+        },
+
+        {
+            "id": 19,
+            "level": "A1",
+            "word": "trinken",
+            "type": "Verb",
+            "article": "",
+            "plural": "",
+            "english": "to drink",
+            "bangla": "পান করা",
+            "example": "Ich trinke Wasser."
+        },
+
+        {
+            "id": 20,
+            "level": "A1",
+            "word": "schlafen",
+            "type": "Verb",
+            "article": "",
+            "plural": "",
+            "english": "to sleep",
+            "bangla": "ঘুমানো",
+            "example": "Ich schlafe acht Stunden."
+        },
+
+        {
+            "id": 21,
+            "level": "A1",
+            "word": "gut",
+            "type": "Adjektiv",
+            "article": "",
+            "plural": "",
+            "english": "good",
+            "bangla": "ভালো",
+            "example": "Das Essen ist gut."
+        },
+
+        {
+            "id": 22,
+            "level": "A1",
+            "word": "schön",
+            "type": "Adjektiv",
+            "article": "",
+            "plural": "",
+            "english": "beautiful / nice",
+            "bangla": "সুন্দর",
+            "example": "Das Wetter ist schön."
+        },
+
+        {
+            "id": 23,
+            "level": "A1",
+            "word": "groß",
+            "type": "Adjektiv",
+            "article": "",
+            "plural": "",
+            "english": "big / tall",
+            "bangla": "বড় / লম্বা",
+            "example": "Mein Haus ist groß."
+        },
+
+        {
+            "id": 24,
+            "level": "A1",
+            "word": "klein",
+            "type": "Adjektiv",
+            "article": "",
+            "plural": "",
+            "english": "small",
+            "bangla": "ছোট",
+            "example": "Meine Wohnung ist klein."
+        },
+
+        {
+            "id": 25,
+            "level": "A1",
+            "word": "schnell",
+            "type": "Adjektiv",
+            "article": "",
+            "plural": "",
+            "english": "fast",
+            "bangla": "দ্রুত",
+            "example": "Das Auto ist schnell."
+        },
+
+        {
+            "id": 26,
+            "level": "A1",
+            "word": "langsam",
+            "type": "Adjektiv",
+            "article": "",
+            "plural": "",
+            "english": "slow",
+            "bangla": "ধীর",
+            "example": "Der Bus ist langsam."
+        },
+
+        {
+            "id": 27,
+            "level": "A1",
+            "word": "heute",
+            "type": "Adverb",
+            "article": "",
+            "plural": "",
+            "english": "today",
+            "bangla": "আজ",
+            "example": "Heute lerne ich Deutsch."
+        },
+
+        {
+            "id": 28,
+            "level": "A1",
+            "word": "morgen",
+            "type": "Adverb",
+            "article": "",
+            "plural": "",
+            "english": "tomorrow",
+            "bangla": "আগামীকাল",
+            "example": "Morgen habe ich keine Zeit."
+        },
+
+        {
+            "id": 29,
+            "level": "A1",
+            "word": "jetzt",
+            "type": "Adverb",
+            "article": "",
+            "plural": "",
+            "english": "now",
+            "bangla": "এখন",
+            "example": "Ich lerne jetzt Deutsch."
+        },
+
+        {
+            "id": 30,
+            "level": "A1",
+            "word": "immer",
+            "type": "Adverb",
+            "article": "",
+            "plural": "",
+            "english": "always",
+            "bangla": "সবসময়",
+            "example": "Ich lerne immer am Abend."
+        }
+
+    ]
+}
