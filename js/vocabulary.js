@@ -1,4 +1,3 @@
-```javascript
 let vocabulary = [];
 
 const searchInput = document.getElementById("searchInput");
@@ -287,4 +286,3 @@ if (categoryFilter) {
 // ================================
 
 loadVocabulary();
-```
