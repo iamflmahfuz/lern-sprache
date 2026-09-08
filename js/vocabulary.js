@@ -1,6 +1,5 @@
 let vocabulary = [];
 
-
 const vocabularyContainer =
     document.getElementById("vocabularyContainer");
 
@@ -14,7 +13,6 @@ const typeFilter =
     document.getElementById("typeFilter");
 
 
-
 async function loadVocabulary() {
 
     try {
@@ -25,8 +23,7 @@ async function loadVocabulary() {
         const data =
             await response.json();
 
-        vocabulary =
-            data.vocabulary;
+        vocabulary = data;
 
         displayVocabulary();
 
@@ -49,7 +46,6 @@ async function loadVocabulary() {
 }
 
 
-
 function displayVocabulary() {
 
     const search =
@@ -57,18 +53,14 @@ function displayVocabulary() {
             .toLowerCase()
             .trim();
 
-
     const selectedLevel =
         levelFilter.value;
-
 
     const selectedType =
         typeFilter.value;
 
-
     const filteredWords =
         vocabulary.filter(word => {
-
 
             const matchesSearch =
 
@@ -88,7 +80,6 @@ function displayVocabulary() {
                     .toLowerCase()
                     .includes(search);
 
-
             const matchesLevel =
 
                 selectedLevel === "ALL"
@@ -97,7 +88,6 @@ function displayVocabulary() {
 
                 word.level === selectedLevel;
 
-
             const matchesType =
 
                 selectedType === "ALL"
@@ -105,7 +95,6 @@ function displayVocabulary() {
                 ||
 
                 word.type === selectedType;
-
 
             return (
 
@@ -123,9 +112,7 @@ function displayVocabulary() {
 
         });
 
-
     vocabularyContainer.innerHTML = "";
-
 
     if (filteredWords.length === 0) {
 
@@ -149,16 +136,13 @@ function displayVocabulary() {
 
     }
 
-
     filteredWords.forEach(word => {
 
         const card =
             document.createElement("div");
 
-
         card.className =
             "vocab-card";
-
 
         card.innerHTML = `
 
@@ -242,7 +226,6 @@ function displayVocabulary() {
 
         `;
 
-
         vocabularyContainer.appendChild(card);
 
     });
@@ -250,23 +233,19 @@ function displayVocabulary() {
 }
 
 
-
 searchInput.addEventListener(
     "input",
     displayVocabulary
 );
-
 
 levelFilter.addEventListener(
     "change",
     displayVocabulary
 );
 
-
 typeFilter.addEventListener(
     "change",
     displayVocabulary
 );
-
 
 loadVocabulary();
