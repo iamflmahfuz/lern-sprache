@@ -1070,3 +1070,12 @@ a {
 .learning-card:hover {
     text-decoration: none;
 }
+.learning-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.learning-card:hover {
+    text-decoration: none;
+}
