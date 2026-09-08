@@ -1079,3 +1079,33 @@ a {
 .learning-card:hover {
     text-decoration: none;
 }
+```css
+/* =================================
+   CLICKABLE VOCABULARY WORD
+================================= */
+
+.vocabulary-word {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-weight: inherit;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+}
+
+.vocabulary-word:hover {
+    opacity: 0.75;
+}
+
+.vocabulary-word:active {
+    transform: scale(0.98);
+}
+
+.speaker-icon {
+    margin-left: 8px;
+    font-size: 0.75em;
+}
+```
