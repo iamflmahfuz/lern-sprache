@@ -1,3 +1,4 @@
+```javascript
 let vocabulary = [];
 
 const searchInput = document.getElementById("searchInput");
@@ -162,12 +163,18 @@ function renderVocabulary(words) {
             </div>
 
 
-            <h2 class="vocabulary-word">
+            <!-- CLICKABLE GERMAN WORD -->
 
+            <button
+                class="vocabulary-word"
+                type="button"
+                onclick="speakGerman(${JSON.stringify(item.word)})"
+                title="Click to hear pronunciation"
+            >
                 ${item.article ? item.article + " " : ""}
                 ${item.word}
-
-            </h2>
+                <span class="speaker-icon">🔊</span>
+            </button>
 
 
             ${
@@ -229,6 +236,32 @@ function renderVocabulary(words) {
 
 
 // ================================
+// GERMAN PRONUNCIATION
+// ================================
+
+function speakGerman(text) {
+
+    // Stop any previous pronunciation
+    window.speechSynthesis.cancel();
+
+    // Create German speech
+    const speech = new SpeechSynthesisUtterance(text);
+
+    // German language
+    speech.lang = "de-DE";
+
+    // Natural beginner-friendly speed
+    speech.rate = 0.85;
+
+    // Normal pitch
+    speech.pitch = 1;
+
+    // Speak
+    window.speechSynthesis.speak(speech);
+}
+
+
+// ================================
 // EVENT LISTENERS
 // ================================
 
@@ -254,3 +287,4 @@ if (categoryFilter) {
 // ================================
 
 loadVocabulary();
+```
