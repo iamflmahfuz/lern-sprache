@@ -1,251 +1,256 @@
 let vocabulary = [];
 
-const vocabularyContainer =
-    document.getElementById("vocabularyContainer");
+const searchInput = document.getElementById("searchInput");
+const levelFilter = document.getElementById("levelFilter");
+const typeFilter = document.getElementById("typeFilter");
+const categoryFilter = document.getElementById("categoryFilter");
+const vocabularyContainer = document.getElementById("vocabularyContainer");
 
-const searchInput =
-    document.getElementById("searchInput");
 
-const levelFilter =
-    document.getElementById("levelFilter");
-
-const typeFilter =
-    document.getElementById("typeFilter");
-
+// ================================
+// LOAD VOCABULARY
+// ================================
 
 async function loadVocabulary() {
-
     try {
+        const response = await fetch("../data/vocabulary.json");
 
-        const response =
-            await fetch("../data/vocabulary.json");
+        if (!response.ok) {
+            throw new Error("Vocabulary file could not be loaded.");
+        }
 
-        const data =
-            await response.json();
+        vocabulary = await response.json();
 
-        vocabulary = data;
+        createCategoryFilter();
+        renderVocabulary(vocabulary);
 
-        displayVocabulary();
-
-    }
-
-    catch (error) {
-
+    } catch (error) {
         console.error(error);
 
         vocabularyContainer.innerHTML = `
-
-            <p class="error">
-                Unable to load vocabulary.
-            </p>
-
+            <div class="no-results">
+                <h3>Unable to load vocabulary</h3>
+                <p>Please try again later.</p>
+            </div>
         `;
-
     }
-
 }
 
 
-function displayVocabulary() {
+// ================================
+// CREATE CATEGORY FILTER
+// ================================
 
-    const search =
-        searchInput.value
-            .toLowerCase()
-            .trim();
+function createCategoryFilter() {
 
-    const selectedLevel =
-        levelFilter.value;
+    if (!categoryFilter) return;
 
-    const selectedType =
-        typeFilter.value;
+    const categories = [
+        ...new Set(
+            vocabulary
+                .map(item => item.category)
+                .filter(category => category)
+        )
+    ];
 
-    const filteredWords =
-        vocabulary.filter(word => {
+    categories.sort((a, b) => a.localeCompare(b, "de"));
 
-            const matchesSearch =
+    categoryFilter.innerHTML = `
+        <option value="all">All Categories</option>
+        ${categories.map(category => `
+            <option value="${category}">${category}</option>
+        `).join("")}
+    `;
+}
 
-                word.word
-                    .toLowerCase()
-                    .includes(search)
 
-                ||
+// ================================
+// FILTER VOCABULARY
+// ================================
 
-                word.english
-                    .toLowerCase()
-                    .includes(search)
+function filterVocabulary() {
 
-                ||
+    const searchTerm = searchInput
+        ? searchInput.value.toLowerCase().trim()
+        : "";
 
-                word.bangla
-                    .toLowerCase()
-                    .includes(search);
+    const selectedLevel = levelFilter
+        ? levelFilter.value
+        : "all";
 
-            const matchesLevel =
+    const selectedType = typeFilter
+        ? typeFilter.value
+        : "all";
 
-                selectedLevel === "ALL"
+    const selectedCategory = categoryFilter
+        ? categoryFilter.value
+        : "all";
 
-                ||
 
-                word.level === selectedLevel;
+    const filtered = vocabulary.filter(item => {
 
-            const matchesType =
+        const matchesSearch =
+            item.word.toLowerCase().includes(searchTerm) ||
+            item.english.toLowerCase().includes(searchTerm) ||
+            item.bangla.toLowerCase().includes(searchTerm);
 
-                selectedType === "ALL"
+        const matchesLevel =
+            selectedLevel === "all" ||
+            item.level === selectedLevel;
 
-                ||
+        const matchesType =
+            selectedType === "all" ||
+            item.type === selectedType;
 
-                word.type === selectedType;
+        const matchesCategory =
+            selectedCategory === "all" ||
+            item.category === selectedCategory;
 
-            return (
+        return (
+            matchesSearch &&
+            matchesLevel &&
+            matchesType &&
+            matchesCategory
+        );
+    });
 
-                matchesSearch
 
-                &&
+    renderVocabulary(filtered);
+}
 
-                matchesLevel
 
-                &&
+// ================================
+// RENDER VOCABULARY
+// ================================
 
-                matchesType
+function renderVocabulary(words) {
 
-            );
+    if (!vocabularyContainer) return;
 
-        });
-
-    vocabularyContainer.innerHTML = "";
-
-    if (filteredWords.length === 0) {
+    if (words.length === 0) {
 
         vocabularyContainer.innerHTML = `
-
             <div class="no-results">
-
-                <h3>
-                    No words found
-                </h3>
-
-                <p>
-                    Try another search.
-                </p>
-
+                <h3>No vocabulary found</h3>
+                <p>Try another search or filter.</p>
             </div>
-
         `;
 
         return;
-
     }
 
-    filteredWords.forEach(word => {
 
-        const card =
-            document.createElement("div");
+    vocabularyContainer.innerHTML = words.map(item => `
 
-        card.className =
-            "vocab-card";
+        <div class="vocabulary-card">
 
-        card.innerHTML = `
+            <div class="vocabulary-top">
 
-            <div class="vocab-card-top">
-
-                <span class="vocab-level">
-                    ${word.level}
+                <span class="vocabulary-level">
+                    ${item.level}
                 </span>
 
-                <span class="vocab-type">
-                    ${word.type}
+                <span class="vocabulary-type">
+                    ${item.type}
                 </span>
 
             </div>
 
 
-            <h2 class="vocab-word">
+            <div class="vocabulary-category">
+                ${item.category || ""}
+            </div>
 
-                ${word.word}
+
+            <h2 class="vocabulary-word">
+
+                ${item.article ? item.article + " " : ""}
+                ${item.word}
 
             </h2>
 
 
             ${
-                word.article
-
-                ?
-
-                `<p class="vocab-grammar">
-
-                    ${word.article}
-                    •
-                    Plural:
-                    ${word.plural}
-
-                </p>`
-
-                :
-
-                ""
+                item.plural
+                ? `<p class="vocabulary-plural">
+                        Plural: <strong>${item.plural}</strong>
+                   </p>`
+                : ""
             }
 
 
-            <div class="vocab-meaning">
+            ${
+                item.pronunciation
+                ? `<p class="vocabulary-pronunciation">
+                        🔊 ${item.pronunciation}
+                   </p>`
+                : ""
+            }
+
+
+            <div class="vocabulary-meaning">
 
                 <p>
-
-                    <strong>
-                        English:
-                    </strong>
-
-                    ${word.english}
-
+                    <strong>English:</strong>
+                    ${item.english}
                 </p>
 
-
                 <p>
-
-                    <strong>
-                        বাংলা:
-                    </strong>
-
-                    ${word.bangla}
-
-                </p>
-
-            </div>
-
-
-            <div class="vocab-example">
-
-                <strong>
-                    Beispiel:
-                </strong>
-
-                <p>
-                    ${word.example}
+                    <strong>বাংলা:</strong>
+                    ${item.bangla}
                 </p>
 
             </div>
 
-        `;
 
-        vocabularyContainer.appendChild(card);
+            <div class="vocabulary-example">
 
-    });
+                <p>
+                    <strong>🇩🇪</strong>
+                    ${item.example}
+                </p>
 
+                <p>
+                    <strong>🇬🇧</strong>
+                    ${item.exampleEnglish}
+                </p>
+
+                <p>
+                    <strong>🇧🇩</strong>
+                    ${item.exampleBangla}
+                </p>
+
+            </div>
+
+        </div>
+
+    `).join("");
 }
 
 
-searchInput.addEventListener(
-    "input",
-    displayVocabulary
-);
+// ================================
+// EVENT LISTENERS
+// ================================
 
-levelFilter.addEventListener(
-    "change",
-    displayVocabulary
-);
+if (searchInput) {
+    searchInput.addEventListener("input", filterVocabulary);
+}
 
-typeFilter.addEventListener(
-    "change",
-    displayVocabulary
-);
+if (levelFilter) {
+    levelFilter.addEventListener("change", filterVocabulary);
+}
+
+if (typeFilter) {
+    typeFilter.addEventListener("change", filterVocabulary);
+}
+
+if (categoryFilter) {
+    categoryFilter.addEventListener("change", filterVocabulary);
+}
+
+
+// ================================
+// START
+// ================================
 
 loadVocabulary();
