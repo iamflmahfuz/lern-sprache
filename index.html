@@ -1,63 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Lern Sprache – German vocabulary with English and Bangla meanings."
+        content="Lern Sprache – Learn German easily with Bangla and English support."
     >
 
-    <title>German Vocabulary | Lern Sprache</title>
+    <title>Lern Sprache | Learn German Easily</title>
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 
 <body>
 
-
-    <!-- ================================
-         HEADER
-    ================================= -->
+    <!-- ================= HEADER ================= -->
 
     <header class="header">
 
         <div class="container nav-container">
 
-            <a href="../index.html" class="logo">
+            <a href="index.html" class="logo">
                 Lern <span>Sprache</span>
             </a>
 
-
             <nav class="navbar">
 
-                <a href="../index.html">Home</a>
-
-                <a href="../index.html#about">About</a>
-
-                <a href="../index.html#courses">Courses</a>
-
-                <a href="index.html">Vocabulary</a>
-
-                <a href="../index.html#learning">Learn</a>
-
-                <a href="../index.html#contact">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#courses">Courses</a>
+                <a href="vocabulary/index.html">Vocabulary</a>
+                <a href="#learning">Learn</a>
+                <a href="#contact">Contact</a>
 
             </nav>
 
-
-            <button
-                class="menu-btn"
-                id="menuBtn"
-                type="button"
-            >
+            <button class="menu-btn" id="menuBtn">
                 ☰
             </button>
 
@@ -66,198 +47,304 @@
     </header>
 
 
+    <!-- ================= HERO ================= -->
 
-    <!-- ================================
-         VOCABULARY HERO
-    ================================= -->
+    <section class="hero" id="home">
 
-    <section class="hero">
-
-        <div class="container">
+        <div class="container hero-container">
 
             <div class="hero-content">
 
                 <span class="hero-label">
-                    🇩🇪 Deutsch Wortschatz
+                    🇩🇪 Deutsch lernen leicht gemacht
                 </span>
-
 
                 <h1>
-                    German
-                    <span>Vocabulary</span>
+                    Learn German
+                    <span>the Easy Way</span>
                 </h1>
 
-
                 <p class="hero-bangla">
-                    সহজভাবে জার্মান শব্দভাণ্ডার শিখুন
+                    সহজ মাতৃভাষায় শিখুন জার্মান ভাষা
                 </p>
-
 
                 <p class="hero-description">
-                    Learn German vocabulary with German words,
-                    English meanings, Bangla meanings and example sentences.
+                    Learn German from A1 to B2 with structured lessons,
+                    vocabulary, grammar, speaking, listening, reading and writing practice.
                 </p>
 
-            </div>
+                <div class="hero-buttons">
 
-        </div>
+                    <a href="#courses" class="btn btn-primary">
+                        Explore Courses
+                    </a>
 
-    </section>
-
-
-
-    <!-- ================================
-         VOCABULARY SECTION
-    ================================= -->
-
-    <section class="section">
-
-        <div class="container">
-
-
-            <!-- PAGE HEADING -->
-
-            <div class="section-heading">
-
-                <span class="section-label">
-                    Wortschatz
-                </span>
-
-                <h2>
-                    Learn German Words
-                </h2>
-
-                <p>
-                    Search and filter vocabulary according to your level.
-                </p>
-
-            </div>
-
-
-
-            <!-- ================================
-                 SEARCH & FILTERS
-            ================================= -->
-
-            <div class="vocabulary-controls">
-
-
-                <!-- SEARCH -->
-
-                <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="Search German, English or Bangla..."
-                    autocomplete="off"
-                >
-
-
-                <!-- LEVEL -->
-
-                <select id="levelFilter">
-
-                    <option value="all">
-                        All Levels
-                    </option>
-
-                    <option value="A1">
-                        A1
-                    </option>
-
-                    <option value="A2">
-                        A2
-                    </option>
-
-                    <option value="B1">
-                        B1
-                    </option>
-
-                </select>
-
-
-                <!-- TYPE -->
-
-                <select id="typeFilter">
-
-                    <option value="all">
-                        All Types
-                    </option>
-
-                    <option value="Ausdruck">
-                        Ausdruck
-                    </option>
-
-                    <option value="Frage">
-                        Frage
-                    </option>
-
-                    <option value="Adverb">
-                        Adverb
-                    </option>
-
-                </select>
-
-
-                <!-- CATEGORY -->
-
-                <select id="categoryFilter">
-
-                    <option value="all">
-                        All Categories
-                    </option>
-
-                </select>
-
-
-            </div>
-
-
-
-            <!-- ================================
-                 LOADING MESSAGE
-            ================================= -->
-
-            <div
-                id="vocabularyContainer"
-                class="vocabulary-grid"
-            >
-
-                <div class="loading">
-
-                    Loading vocabulary...
+                    <a href="#about" class="btn btn-secondary">
+                        Learn More
+                    </a>
 
                 </div>
 
             </div>
 
 
+            <div class="hero-card">
+
+                <div class="german-flag">
+                    🇩🇪
+                </div>
+
+                <h3>
+                    Deutsch lernen
+                </h3>
+
+                <p>
+                    Lernen → Üben → Sprechen → Fortschritt
+                </p>
+
+                <div class="hero-levels">
+
+                    <span>A1</span>
+                    <span>A2</span>
+                    <span>B1</span>
+                    <span>B2</span>
+
+                </div>
+
+            </div>
+
         </div>
 
     </section>
 
 
+    <!-- ================= ABOUT ================= -->
 
-    <!-- ================================
-         CTA
-    ================================= -->
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    About Lern Sprache
+                </span>
+
+                <h2>
+                    German lernen – Schritt für Schritt
+                </h2>
+
+                <p>
+                    Lern Sprache is designed to make German learning easier
+                    for Bangla-speaking learners.
+                </p>
+
+            </div>
+
+
+            <div class="features">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📚
+                    </div>
+
+                    <h3>
+                        Structured Learning
+                    </h3>
+
+                    <p>
+                        Learn German systematically from A1 to B2.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🇩🇪
+                    </div>
+
+                    <h3>
+                        Real German
+                    </h3>
+
+                    <p>
+                        Learn useful German vocabulary and expressions
+                        for everyday communication.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🇧🇩
+                    </div>
+
+                    <h3>
+                        Bangla Support
+                    </h3>
+
+                    <p>
+                        Difficult German concepts are explained
+                        in an easy-to-understand way.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🎯
+                    </div>
+
+                    <h3>
+                        Exam Preparation
+                    </h3>
+
+                    <p>
+                        Build the skills needed for German language exams
+                        and real-life communication.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COURSES ================= -->
+
+    <section class="section courses-section" id="courses">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Unsere Kurse
+                </span>
+
+                <h2>
+                    Choose Your German Level
+                </h2>
+
+                <p>
+                    Select a level and start your German learning journey.
+                </p>
+
+            </div>
+
+
+            <!-- JavaScript will generate courses here -->
+
+            <div
+                class="courses-grid"
+                id="coursesContainer"
+            >
+
+                <p class="loading">
+                    Loading courses...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LEARNING ================= -->
+
+    <section class="section" id="learning">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Lernbereiche
+                </span>
+
+                <h2>
+                    Everything You Need to Learn German
+                </h2>
+
+            </div>
+
+
+            <div class="learning-grid">
+
+                <div class="learning-card">
+                    <span>🗣️</span>
+                    <h3>Sprechen</h3>
+                    <p>Speaking</p>
+                </div>
+
+                <div class="learning-card">
+                    <span>🎧</span>
+                    <h3>Hören</h3>
+                    <p>Listening</p>
+                </div>
+
+                <div class="learning-card">
+                    <span>📖</span>
+                    <h3>Lesen</h3>
+                    <p>Reading</p>
+                </div>
+
+                <div class="learning-card">
+                    <span>✍️</span>
+                    <h3>Schreiben</h3>
+                    <p>Writing</p>
+                </div>
+
+
+                <!-- CLICKABLE VOCABULARY CARD -->
+
+                <a href="vocabulary/index.html" class="learning-card">
+                    <span>🧠</span>
+                    <h3>Wortschatz</h3>
+                    <p>Vocabulary</p>
+                </a>
+
+
+                <div class="learning-card">
+                    <span>📐</span>
+                    <h3>Grammatik</h3>
+                    <p>Grammar</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
 
     <section class="cta">
 
         <div class="container cta-content">
 
             <h2>
-                Deutsch lernen?
+                Bereit, Deutsch zu lernen?
             </h2>
 
             <p>
-                Learn vocabulary, grammar and communication skills
-                with Lern Sprache.
+                Start your German learning journey with Lern Sprache.
             </p>
 
-            <a
-                href="../index.html#courses"
-                class="btn btn-primary"
-            >
+            <a href="#courses" class="btn btn-primary">
                 View Courses
             </a>
 
@@ -266,15 +353,9 @@
     </section>
 
 
+    <!-- ================= CONTACT ================= -->
 
-    <!-- ================================
-         FOOTER
-    ================================= -->
-
-    <footer
-        class="footer"
-        id="contact"
-    >
+    <footer class="footer" id="contact">
 
         <div class="container footer-container">
 
@@ -294,7 +375,6 @@
             </div>
 
 
-
             <!-- QUICK LINKS -->
 
             <div>
@@ -303,24 +383,19 @@
                     Quick Links
                 </h3>
 
-                <a href="../index.html">
-                    Home
-                </a>
+                <a href="#home">Home</a>
 
-                <a href="../index.html#courses">
-                    Courses
-                </a>
+                <a href="#courses">Courses</a>
 
-                <a href="index.html">
+                <a href="vocabulary/index.html">
                     Vocabulary
                 </a>
 
-                <a href="../index.html#learning">
+                <a href="#learning">
                     Learning
                 </a>
 
             </div>
-
 
 
             <!-- CONTACT -->
@@ -350,7 +425,6 @@
             </div>
 
 
-
             <!-- SOCIAL MEDIA -->
 
             <div>
@@ -358,7 +432,6 @@
                 <h3>
                     Follow Us
                 </h3>
-
 
                 <a
                     href="https://www.youtube.com/channel/UC2gwxoOl-5OlXJsN3eg4RMQ"
@@ -368,7 +441,6 @@
                     ▶️ YouTube
                 </a>
 
-
                 <a
                     href="https://www.facebook.com/lernsprache"
                     target="_blank"
@@ -377,7 +449,6 @@
                     📘 Facebook
                 </a>
 
-
                 <a
                     href="https://www.instagram.com/lernsprache51/"
                     target="_blank"
@@ -385,7 +456,6 @@
                 >
                     📸 Instagram
                 </a>
-
 
                 <a
                     href="https://wa.me/8801822636746"
@@ -400,7 +470,6 @@
         </div>
 
 
-
         <div class="copyright">
 
             <p>
@@ -412,17 +481,10 @@
     </footer>
 
 
+    <!-- ================= JAVASCRIPT ================= -->
 
-    <!-- ================================
-         JAVASCRIPT
-    ================================= -->
-
-    <script src="../js/main.js"></script>
-
-    <script src="../js/vocabulary.js"></script>
-
+    <script src="js/courses.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
-
 </html>
-```
